@@ -12,7 +12,7 @@ img {
     max-width: 100%;
 }
 main {
-    height: 75vh;
+    height: 60vh;
     padding: 0 5px;
     display: grid;
     place-items: center;
@@ -42,9 +42,10 @@ main {
     margin-bottom: 10px;
 }
 .unit {
+    text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 5px;
+    font-size: 12px;
+    letter-spacing: 2.5px;
     color: hsl(237, 18%, 59%);
 }
 footer {
@@ -73,6 +74,10 @@ footer {
 @media screen and (min-width: 800px){
     .duration {
         font-size: 50px;
+    }
+    .unit {
+        font-size: 14px;
+        letter-spacing: 5px;
     }
     footer {
         padding-block: 70px 35px;

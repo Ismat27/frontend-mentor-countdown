@@ -20,7 +20,6 @@ function timeLeft(endDate=target) {
 
     if (diff <= 0) {
         clearInterval(constId)
-        console.log('over');
         return 
     }
     const oneDay = 24 * 60 * 60 * 1000; // milli seconds
@@ -40,5 +39,5 @@ function timeLeft(endDate=target) {
     })
 }
 
-const constId = setInterval(timeLeft, 1000)
+const constId = setInterval(() => timeLeft(), 1000)
 timeLeft()
