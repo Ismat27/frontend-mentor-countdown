@@ -5,8 +5,8 @@
 }
 .a, .b {
     background-color: hsl(236, 21%, 26%);
-    width: 100px;
-    height: 50px;
+    width: 75px;
+    height: 40px;
 }
 .a {
     opacity: .5;
@@ -41,8 +41,9 @@
 .dot.right {
     right: -2px;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) {
     .a, .b {
-        width: 75px;
+        width: 100px;
+        height: 50px;
     }
 }
